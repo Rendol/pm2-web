@@ -5,6 +5,7 @@
   "preferGlobal": "true",
   "main": "pm2-web.js",
   "scripts": {
+    "build": "grunt dist",
     "integration": "istanbul cover nodeunit test/integration",
     "test": "istanbul cover nodeunit test/unit",
     "coveralls": "istanbul cover nodeunit test/unit && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"

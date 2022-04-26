@@ -38,4 +38,5 @@ module.exports = function(grunt) {
 
 	// default task
 	grunt.registerTask("default", ["browserify", "less", "watch"]);
+	grunt.registerTask("dist", ["browserify"]);
 };
