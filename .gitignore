@@ -5,3 +5,4 @@ data
 *.iml
 coverage
 *.log
+server/public/js/monitor.js
