@@ -4773,7 +4773,7 @@ module.exports = {
 }).call(this,typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],21:[function(require,module,exports){
 /*
-WildEmitter.js is a slim little event emitter by @henrikjoreteg largely based 
+WildEmitter.js is a slim little event emitter by @henrikjoreteg largely based
 on @visionmedia's Emitter from UI Kit.
 
 Why? I wanted it standalone.
@@ -4781,14 +4781,14 @@ Why? I wanted it standalone.
 I also wanted support for wildcard emitters like this:
 
 emitter.on('*', function (eventName, other, event, payloads) {
-    
+
 });
 
 emitter.on('somenamespace*', function (eventName, payloads) {
-    
+
 });
 
-Please note that callbacks triggered by wildcard registered events also get 
+Please note that callbacks triggered by wildcard registered events also get
 the event name as the first argument.
 */
 module.exports = WildEmitter;
@@ -5631,10 +5631,10 @@ module.exports = ["$routeProvider",
 	function($routeProvider) {
 		$routeProvider.
 			when("/hosts/:host", {
-				templateUrl: "/js/partials/host.html"
+				templateUrl: "js/partials/host.html"
 			}).
 			otherwise({
-				templateUrl: "/js/partials/connecting.html",
+				templateUrl: "js/partials/connecting.html",
 				controller: "ConnectionController"
 			});
 	}
